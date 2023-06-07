@@ -135,6 +135,7 @@ button {
   width: 80px;
   border: none;
   border-radius: 5px;
+  font-weight: 700;
 }
 
 .grid-container {
@@ -174,9 +175,15 @@ button {
   display: inline-block;
   padding: 0.5rem 1rem;
   border: 1px solid var(--color-secondary);
-  border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  background-color: transparent;
+  color: white;
+}
+
+.btn:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .details-top {
@@ -208,7 +215,7 @@ button {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
-/* search results*/
+/* search results */
 
 .search {
   padding: 60px;
@@ -220,4 +227,32 @@ button {
 
 .page-counter {
   margin-top: 10px;
+}
+
+.active {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.alert {
+  background: red;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+#search-results-heading {
+  text-transform: uppercase;
+}
+/* swiper */
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-rating {
+  text-align: center;
+  padding: 10px;
 }

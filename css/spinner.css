@@ -1,15 +1,15 @@
 .spinner {
   position: absolute;
-  width: 40px;
+  width: 60px;
   aspect-ratio: 1;
-  display: grid;
+  display: none;
   border-radius: 50%;
-  background: linear-gradient(0deg, rgb(0 0 0/50%) 30%, #0000 0 70%, rgb(0 0 0/100%) 0) 50%/8% 100%,
-    linear-gradient(90deg, rgb(0 0 0/25%) 30%, #0000 0 70%, rgb(0 0 0/75%) 0) 50%/100% 8%;
+  background: linear-gradient(0deg, rgba(237, 156, 24, 0.923) 30%, #e20b0b00 0 70%, rgb(0 0 0/100%) 0) 50%/8% 100%,
+    linear-gradient(90deg, rgb(219, 240, 28) 30%, #73f423de 0 70%, rgba(30, 58, 235, 0.934) 0) 50%/100% 8%;
   background-repeat: no-repeat;
   animation: s3 1s infinite steps(12);
   left: 50%;
-  top: 50%;
+  top: 48%;
 }
 .spinner::before,
 .spinner::after {
@@ -29,4 +29,8 @@
   100% {
     transform: rotate(1turn);
   }
+}
+
+.show {
+  display: grid;
 }
