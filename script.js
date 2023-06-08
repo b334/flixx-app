@@ -245,7 +245,6 @@ async function search() {
     global.search.page = page;
     global.search.totalPages = total_pages;
     global.search.totalResults = total_results;
-    console.log(results);
 
     if (results.length === 0) {
       displayAlert('Movie not found');
@@ -303,7 +302,6 @@ function displaySearchResults(results) {
 }
 
 function displayPagination() {
-  console.log('total pages ', global.search.totalPages);
   if (global.search.totalPages !== 1) {
     const paginationDivEl = document.createElement('div');
     paginationDivEl.className = 'pagination';
